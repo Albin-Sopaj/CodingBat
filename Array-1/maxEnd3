@@ -1,0 +1,18 @@
+public int[] maxEnd3(int[] nums) {
+  int[] array = new int[3];
+  if(nums[0] > nums[2]) {
+    array[0] = nums[0];
+    array[1] = nums[0];
+    array[2] = nums[0];
+  } else if(nums[0] < nums[2]) {
+    array[0] = nums[2];
+    array[1] = nums[2];
+    array[2] = nums[2];
+  } 
+    else {
+    array[0] = nums[2];
+    array[1] = nums[2];
+    array[2] = nums[2];
+  }
+  return array;
+}
