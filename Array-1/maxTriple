@@ -1,0 +1,26 @@
+public int maxTriple(int[] nums) {
+  //declaring a new array of integers
+  int[] array = new int[nums.length];
+  //storing the value of the middle element of nums[] to a container
+  int myMiddleElement = nums[nums.length/2];
+  //storing the value of the first element of nums[] to another container
+  int myFirstElement = nums[0];
+  //storing the value of the last element of nums[] to a third container
+  int myLastElement = nums[nums.length - 1];
+  //the first element of array-copying the value of the first element of nums[] to array[]
+  array[0] = nums[0];
+  //the middle element of the array-copying the value of the middle element of nums[] to array[]
+  array[nums.length/2] = nums[nums.length/2];
+  //the last element of the array-copying the value of the last element of nums[] to array[]
+  array[nums.length - 1] = nums[nums.length - 1];
+  int a = array[0];
+  int b = array[nums.length/2];
+  int c = array[nums.length - 1];
+  if(a > b && a > c) {
+    return a;
+  } else if(b > a && b > c) {
+    return b;
+  } else {
+    return c;
+  }
+}
