@@ -1,0 +1,27 @@
+public int[] front11(int[] a, int[] b) {
+    int[] array;
+    //checking if the length of a[] and b[] is greater than 0
+    //if greater than zero, then store the 0th element of a[] and the 0th element
+    //of b[] to the new array[], such that a[0], becomes array[0] and b[0] becomes
+    //array[1]
+		if(a.length > 0 && b.length > 0) {
+			array = new int[] {a[0], b[0]};
+		}
+		//if the length of the first array is 0, and the length of the second array
+		//isn't 0, then assign to array[] only the 0th element of b (b[0])
+		  else if (a.length == 0 && b.length != 0) {
+			array = new int[] {b[0]};
+		}
+		//if both arrays have the length of 0, then it means that the new array (array[])
+		//will be empty, and it will have as 0th and 1st element nothing (empty values)
+		  else if(a.length == 0 && b.length == 0) {
+		  array = new int[] {};
+		} 
+		//if b[] is empty, then assign to array[0] the 0th element of a, because b
+		//was empty.
+		else {
+			array = new int[] {a[0]};
+		}
+		return array;
+
+}
