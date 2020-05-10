@@ -1,0 +1,12 @@
+public int[] biggerTwo(int[] a, int[] b) {
+  int firstSum = a[0] + a[1];
+  int secondSum = b[0] + b[1];
+  
+  if(firstSum > secondSum) {
+    return a;
+  } else if(firstSum < secondSum) {
+    return b;
+  } else {
+    return a;
+  }
+}
