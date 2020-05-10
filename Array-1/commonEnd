@@ -1,0 +1,21 @@
+public boolean commonEnd(int[] a, int[] b) {
+  //we first check if the length of the arrays is greater than 1, otherwise
+  //don't enter the if conditon but skip it and go directly to the else part, 
+  //which should return false
+  if(a.length >= 1 && b.length >= 1) {
+    //assuming their lengths are >= 1, now we want to check if the starting element
+    //of the first array is the same as the first element of the second array.
+    //we also want to check if the ending element of the first array is the same
+    //as the ending element of the second array.
+    //we will return true if and only if one of the two above conditions is true.
+    //We're only trying to check if one of the two above conditions is true. If
+    //both of them are true then, VOILA even better.
+    if(a[0] == b[0] || a[a.length -1] == b[b.length - 1]) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
