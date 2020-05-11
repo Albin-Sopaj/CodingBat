@@ -1,0 +1,10 @@
+public int teenSum(int a, int b) {
+  //if the number is teen, then just return 19
+  if(a >= 13 && a <= 19 || b >= 13 && b <= 19) {
+    return 19;
+  } 
+  //if the number isn't teen then return their proper sum
+  else {
+    return a + b;
+  }
+}
