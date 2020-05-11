@@ -1,0 +1,14 @@
+public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
+  //it's not morning, I'm not asleep --> I'm answering the phone
+  if(isMorning == false && isAsleep == false) {
+    return true;        //I'm answering the phone
+  } 
+  //you only answer the phone in the morning is mom is calling and if your't asleep 
+  else if(isMorning == true && isMom == true && isAsleep == false) {
+    return true;
+  }
+  //you are asleep, don't answer the phone
+  else {
+    return false;
+  }
+}
